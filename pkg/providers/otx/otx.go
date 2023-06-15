@@ -79,15 +79,15 @@ paginate:
 
 func (c *Client) formatURL(domain string, page int) string {
 	if !domainutil.HasSubdomain(domain) {
-		return fmt.Sprintf(_BaseURL+"api/v1/indicators/domain/%s/url_list?limit=100&page=%d",
+		return fmt.Sprintf(_BaseURL+"api/v1/indicators/domain/%s/url_list?limit=100000&page=%d",
 			domain, page,
 		)
 	} else if domainutil.HasSubdomain(domain) && c.config.IncludeSubdomains {
-		return fmt.Sprintf(_BaseURL+"api/v1/indicators/domain/%s/url_list?limit=100&page=%d",
+		return fmt.Sprintf(_BaseURL+"api/v1/indicators/domain/%s/url_list?limit=100000&page=%d",
 			domainutil.Domain(domain), page,
 		)
 	} else {
-		return fmt.Sprintf(_BaseURL+"api/v1/indicators/hostname/%s/url_list?limit=100&page=%d",
+		return fmt.Sprintf(_BaseURL+"api/v1/indicators/hostname/%s/url_list?limit=100000&page=%d",
 			domain, page,
 		)
 	}
