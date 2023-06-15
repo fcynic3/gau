@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"github.com/bobesa/go-domain-util/domainutil"
 	jsoniter "github.com/json-iterator/go"
-	"github.com/lc/gau/v2/pkg/httpclient"
-	"github.com/lc/gau/v2/pkg/providers"
+	"github.com/fcynic3/gau/v2/pkg/httpclient"
+	"github.com/fcynic3/gau/v2/pkg/providers"
 	"github.com/sirupsen/logrus"
 )
 
