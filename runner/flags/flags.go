@@ -4,7 +4,7 @@ import (
 	"crypto/tls"
 	"flag"
 	"fmt"
-	"github.com/lc/gau/v2/pkg/providers"
+	"github.com/fcynic3/gau/v2/pkg/providers"
 	"github.com/lynxsecurity/pflag"
 	"github.com/lynxsecurity/viper"
 	log "github.com/sirupsen/logrus"
